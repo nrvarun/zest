@@ -1,0 +1,79 @@
+//Banner Stylings
+
+.banner {
+  position: relative;
+  background-color: $b0;
+  min-height: 400px;
+  height: 100vh;
+
+  @media (min-width: $sm) {
+    height: 550px;
+  }
+
+  &--home {
+    @media (min-width: $sm) {
+      height: 600px;
+    }
+
+    @media (min-width: $md) {
+      height: 650px;
+    }
+
+    @media (min-width: 1440px) {
+      height: 100vh;
+    }
+  }
+
+  &__bgimg {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: auto;
+  }
+}
+
+.banner-heading-w {
+  @media (min-width: $md) {
+    padding: 0 100px;
+    text-align: center;
+  }
+}
+
+.banner-content-w {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.banner-heading {
+  color: $w;
+  z-index: 40;
+  font-size: 30px;
+  font-family: $roboto;
+  text-transform: capitalize;
+
+  @media (min-width: $sm) {
+    font-size: 40px;
+  }
+
+  @media (min-width: $md) {
+    font-size: 65px;
+  }
+
+  @media (min-width: $lg) {
+    font-size: 80px;
+  }
+}
+
+.banner-desc {
+  font-family: $roboto;
+  font-size: 15px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 3.6px;
+  color: $w;
+  opacity: 0.7;
+}

@@ -1,0 +1,117 @@
+//Footer Stylings
+
+.footer {
+  background-color: #242424;
+}
+
+.footer-text {
+  &,
+  &:hover,
+  &:focus {
+    color: lighten($color: $w, $amount: 0.5);
+    font-family: $roboto;
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: capitalize;
+    margin: 0;
+    opacity: 0.6;
+
+    @media (min-width: $sm) {
+      font-size: 14px;
+    }
+  }
+}
+
+.footer-listheading {
+  color: lighten($color: $w, $amount: 0.5);
+  font-family: $roboto;
+  font-weight: 300;
+  font-size: 16px;
+  opacity: 0.6;
+  margin-bottom: 20px;
+
+  @media (min-width: $sm) {
+    font-size: 18px;
+  }
+}
+
+.footer-heading {
+  color: lighten($color: $w, $amount: 0.5);
+  font-family: $roboto;
+  font-size: 22px;
+  font-weight: 300;
+  opacity: 0.6;
+
+  @media (min-width: $sm) {
+    font-size: 24px;
+  }
+
+  @media (min-width: $md) {
+    font-size: 26px;
+  }
+}
+
+.footer-navlist {
+  display: flex;
+  margin: 0;
+
+  li {
+    margin-right: 10px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.footer-list {
+  &__item {
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.footer-actionbtn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #fa1464;
+  background-image: linear-gradient(-51deg, #ffc600 0%, #ffc600 1%, #fdcf09 100%);
+
+  &--primary {
+    border-radius: 5px;
+    background-color: #fa1464;
+    background-image: linear-gradient(-51deg, #ff0058 0%, #ee3e7b 100%);
+  }
+
+  &__location {
+    font-size: 16px;
+    color: $w;
+    text-transform: uppercase;
+    font-family: $roboto;
+
+    @media (min-width: $sm) {
+      font-size: 18px;
+    }
+  }
+
+  &__sector {
+    font-size: 14px;
+    color: $b0;
+    font-family: $roboto;
+
+    @media (min-width: $sm) {
+      font-size: 16px;
+    }
+  }
+}
+
+.footer-list-w {
+  display: flex;
+  justify-content: space-between;
+}

@@ -1,0 +1,42 @@
+section.bmi-section.bg-gradient
+  .container
+    .row
+      .col-sm-12
+        h2.section-heading.white
+          | Calculate your
+          span.d-block BMI
+
+      .col-sm-12
+        form#calc-bmi(action="")
+          .row.w-75
+            .col-sm-7
+              .row
+                .col-sm-6
+                  .row
+                    .col-sm-12
+                      p.bmi-label Height in Ft/in
+                    .col-sm-6
+                      input#feet.input-field.input-field--small(name="feet" placeholder="feet" required)
+                    .col-sm-6
+                      input#Inch.input-field.input-field--small(name="Inch" placeholder="inch" required)
+
+                .col-sm-6
+                  .row
+                    .col-sm-12
+                      p.bmi-label Weight in lbs
+                      input#pounds.input-field(name="pounds" placeholder="pounds" required)
+
+                .col-sm-12.mt-5
+                  button(type="submit").button.button--primary
+                    | Calculate BMI
+
+            .col-sm-5.text-center
+              p.bmi-title
+                | Your
+                span.mx-2 BMI
+                | is
+              p.bmi-result
+                | 22.9
+              a(href="javascript:void(0);").link.white.opacity-50
+                | View BMI class >
+

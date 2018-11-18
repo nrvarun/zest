@@ -1,0 +1,20 @@
+//Custom tabs module
+.nav-pills .nav-link {
+  color: #666666;
+  font-family: $roboto;
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: capitalize;
+
+  @media (min-width: $sm) {
+    font-size: 16px;
+  }
+
+  &.active,
+  .show > .nav-link {
+    color: #fc0a5e;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+    background-color: transparent;
+  }
+}

@@ -1,0 +1,115 @@
+section.schedule-section
+  .container.text-center
+    .row
+      .col-sm-12
+        h2.section-heading.mb-2
+          | Group
+          span.mx-2 class
+          | schedule
+
+        h4.section-desc.mb-5.b9
+          | Make yourself stronger than your excuses.
+
+        .schedule-content
+          ul#pills-tab.nav.nav-pills.nav-fill.mb-5(role='tablist')
+            li.nav-item
+              a#pills-monday-tab.nav-link.active(data-toggle='pill', href='#pills-monday', role='tab', aria-controls='pills-monday', aria-selected='true') Monday
+            li.nav-item
+              a#pills-tuesday-tab.nav-link(data-toggle='pill', href='#pills-tuesday', role='tab', aria-controls='pills-tuesday', aria-selected='false') Tuesday
+            li.nav-item
+              a#pills-wednesday-tab.nav-link(data-toggle='pill', href='#pills-wednesday', role='tab', aria-controls='pills-wednesday', aria-selected='false') Wednesday
+            li.nav-item
+              a#pills-thursday-tab.nav-link(data-toggle='pill', href='#pills-thursday', role='tab', aria-controls='pills-thursday', aria-selected='false') thursday
+            li.nav-item
+              a#pills-friday-tab.nav-link(data-toggle='pill', href='#pills-friday', role='tab', aria-controls='pills-friday', aria-selected='false') friday
+            li.nav-item
+              a#pills-saturday-tab.nav-link(data-toggle='pill', href='#pills-saturday', role='tab', aria-controls='pills-saturday', aria-selected='false') saturday
+            li.nav-item
+              a#pills-sunday-tab.nav-link(data-toggle='pill', href='#pills-sunday', role='tab', aria-controls='pills-sunday', aria-selected='false') sunday
+          #pills-tabContent.tab-content
+            #pills-monday.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='pills-monday-tab')
+              ul.schedulecards-list
+                li.schedulecards-list__item
+                  include ../../components/mixins/schedule-card
+                  +shedulecard('ZUMBA', '7:00 AM - 8:00 AM')
+                li.schedulecards-list__item
+                  +shedulecard('Pilates', '7:00 AM - 8:00 AM')
+                li.schedulecards-list__item
+                  +shedulecard('Bolly aerobics', '7:00 AM - 8:00 AM')
+                li.schedulecards-list__item
+                  +shedulecard('TRX', '7:00 AM - 8:00 AM')
+            #pills-tuesday.tab-pane.fade(role='tabpanel', aria-labelledby='pills-tuesday-tab')
+              ul.schedulecards-list
+                li.schedulecards-list__item
+                  include ../../components/mixins/schedule-card
+                  +shedulecard('ZUMBA', '7:00 AM - 8:00 AM')
+                li.schedulecards-list__item
+                  +shedulecard('Pilates', '7:00 AM - 8:00 AM')
+                li.schedulecards-list__item
+                  +shedulecard('Bolly aerobics', '7:00 AM - 8:00 AM')
+                li.schedulecards-list__item
+                  +shedulecard('TRX', '7:00 AM - 8:00 AM')
+            #pills-wednesday.tab-pane.fade(role='tabpanel', aria-labelledby='pills-wednesday-tab')
+              ul.schedulecards-list
+                li.schedulecards-list__item
+                  include ../../components/mixins/schedule-card
+                  +shedulecard('ZUMBA', '7:00 AM - 8:00 AM')
+                li.schedulecards-list__item
+                  +shedulecard('Pilates', '7:00 AM - 8:00 AM')
+                li.schedulecards-list__item
+                  +shedulecard('Bolly aerobics', '7:00 AM - 8:00 AM')
+                li.schedulecards-list__item
+                  +shedulecard('TRX', '7:00 AM - 8:00 AM')
+            #pills-thursday.tab-pane.fade(role='tabpanel', aria-labelledby='pills-thursday-tab')
+              ul.schedulecards-list
+                li.schedulecards-list__item
+                  include ../../components/mixins/schedule-card
+                  +shedulecard('ZUMBA', '7:00 AM - 8:00 AM')
+                li.schedulecards-list__item
+                  +shedulecard('Pilates', '7:00 AM - 8:00 AM')
+                li.schedulecards-list__item
+                  +shedulecard('Bolly aerobics', '7:00 AM - 8:00 AM')
+                li.schedulecards-list__item
+                  +shedulecard('TRX', '7:00 AM - 8:00 AM')
+            #pills-friday.tab-pane.fade(role='tabpanel', aria-labelledby='pills-friday-tab')
+              ul.schedulecards-list
+                li.schedulecards-list__item
+                  include ../../components/mixins/schedule-card
+                  +shedulecard('ZUMBA', '7:00 AM - 8:00 AM')
+                li.schedulecards-list__item
+                  +shedulecard('Pilates', '7:00 AM - 8:00 AM')
+                li.schedulecards-list__item
+                  +shedulecard('Bolly aerobics', '7:00 AM - 8:00 AM')
+                li.schedulecards-list__item
+                  +shedulecard('TRX', '7:00 AM - 8:00 AM')
+            #pills-saturday.tab-pane.fade(role='tabpanel', aria-labelledby='pills-saturday-tab')
+              ul.schedulecards-list
+                li.schedulecards-list__item
+                  include ../../components/mixins/schedule-card
+                  +shedulecard('ZUMBA', '7:00 AM - 8:00 AM')
+                li.schedulecards-list__item
+                  +shedulecard('Pilates', '7:00 AM - 8:00 AM')
+                li.schedulecards-list__item
+                  +shedulecard('Bolly aerobics', '7:00 AM - 8:00 AM')
+                li.schedulecards-list__item
+                  +shedulecard('TRX', '7:00 AM - 8:00 AM')
+            #pills-sunday.tab-pane.fade(role='tabpanel', aria-labelledby='pills-sunday-tab')
+              ul.schedulecards-list
+                li.schedulecards-list__item
+                  include ../../components/mixins/schedule-card
+                  +shedulecard('ZUMBA', '7:00 AM - 8:00 AM')
+                li.schedulecards-list__item
+                  +shedulecard('Pilates', '7:00 AM - 8:00 AM')
+                li.schedulecards-list__item
+                  +shedulecard('Bolly aerobics', '7:00 AM - 8:00 AM')
+                li.schedulecards-list__item
+                  +shedulecard('TRX', '7:00 AM - 8:00 AM')
+
+      .col-sm-12.text-center
+        a(href="javascript:void(0);").schedule-downloadbtn
+          img(src="./img/download-button.svg" alt="download")
+          | Download our full class schedule
+
+
+
+

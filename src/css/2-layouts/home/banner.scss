@@ -1,0 +1,17 @@
+.banneractions-list {
+  @media (min-width: $sm) {
+    display: flex;
+  }
+
+  li {
+    margin-bottom: 15px;
+
+    @media (min-width: $sm) {
+      margin-right: 15px;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.studio-section {
+  padding: 30px;
+  background: url('../img/studio-bgimg.png') no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @media (min-width: $sm) {
+    padding: 60px;
+  }
+
+  @media (min-width: $md) {
+    padding: 80px;
+  }
+
+  @media (min-width: $lg) {
+    padding: 100px;
+  }
+}
+
+
+.studio-content {
+  max-width: 670px;
+  margin: 0 auto;
+}
+
+.studio-top-content {
+  margin-bottom: 50px;
+
+  @media (min-width: $sm) {
+    margin-bottom: 100px;
+  }
+}

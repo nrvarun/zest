@@ -1,0 +1,28 @@
+doctype html
+html(lang='en')
+  include pug/base/head
+  link(rel='stylesheet', type='text/css', charset='UTF-8', href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css')
+  link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css")
+  include pug/base/header
+
+  body
+    main
+      include pug/layouts/home/banner
+      include pug/layouts/home/classes
+      include pug/layouts/home/fitness
+      include pug/layouts/home/offer
+      include pug/layouts/home/schedule
+      include pug/layouts/home/events
+      include pug/layouts/home/bmi
+      include pug/layouts/home/testimonial
+      include pug/layouts/home/studio
+
+      include pug/base/footer
+
+      include pug/components/overlay
+      include pug/components/sidebar
+
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js")
+    //- script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCXy1BqkAoOR5OSCiO4nVvXHo4m9XZiRfs")

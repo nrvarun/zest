@@ -1,0 +1,147 @@
+//Header Stylings
+
+
+.navbar-brand {
+  background-color: transparent;
+}
+
+.nav-link {
+  position: relative;
+  padding: 0 !important;
+  font-family: $roboto;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.92px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+
+  &,
+  &:hover,
+  &:focus {
+    color: $w;
+  }
+
+  &:hover {
+    color: $primary-color;
+  }
+
+  &.disabled {
+    color: rgba(255, 255, 255, 0.4) !important;
+  }
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 9000;
+  padding: 20px 40px;
+  background-color: transparent;
+  transition: all 0.5s ease;
+
+  @media (min-width: $sm) {
+    padding: 20px 80px;
+  }
+
+  &.active {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: $b0;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.navbar-toggler {
+  margin-left: auto;
+  border: none;
+}
+
+.nav-item {
+  margin-left: 10px;
+  padding: 0 10px;
+  transition: opacity 1s ease;
+
+  &:last-child {
+    margin-left: 0;
+  }
+}
+
+.navbar-nav {
+  margin-left: auto;
+
+  @media (min-width: $sm) {
+    flex-direction: row;
+  }
+}
+
+.navbar-logo {
+  width: 150px;
+  height: auto;
+
+  @media (min-width: $md) {
+    width: 200px;
+  }
+}
+
+.navmenu-toggle {
+  border: 0;
+  background-color: transparent;
+  color: transparent;
+  width: 30px;
+  padding: 0;
+  height: 30px;
+
+  &__line {
+    position: relative;
+    text-indent: -99999px;
+    display: flex;
+    height: 10px;
+    transition: all 0.5s ease;
+
+    &::after {
+      position: absolute;
+      content: '';
+      height: 2px;
+      width: 100%;
+      margin-bottom: 2px;
+      display: inline-block;
+      transition: transform 0.5s ease;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: $primary-color;
+    }
+  }
+
+  &.active {
+    .navmenu-toggle__line {
+      &:nth-child(1) {
+        &::after {
+          transform: rotate(-42deg) translate(-7px, 11px);
+        }
+      }
+
+      &:nth-child(2) {
+        &::after {
+          transform: translateX(-10px) scale(0);
+          transform-origin: right;
+        }
+      }
+
+      &:nth-child(3) {
+        &::after {
+          transform: rotate(42deg) translate(-2px, -8px);
+        }
+      }
+    }
+  }
+}
+
+.navmenu-wrapper {
+  margin-left: auto;
+}

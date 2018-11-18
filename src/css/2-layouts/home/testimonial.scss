@@ -1,0 +1,141 @@
+.testimonial-section {
+  padding: 30px;
+
+  @media (min-width: $sm) {
+    padding: 50px;
+  }
+
+  @media (min-width: $md) {
+    padding: 80px;
+  }
+
+  @media (min-width: $lg) {
+    padding: 140px;
+  }
+}
+
+.testimonial-w {
+  max-width: 1050px;
+  margin: 0 auto;
+  box-shadow: 0 0 131px rgba(0, 0, 0, 0.08);
+  background-color: #ffffff;
+  padding: 30px;
+
+  @media (min-width: $md) {
+    padding: 50px;
+  }
+}
+
+.testimony {
+  @media (min-width: $sm) {
+    display: flex;
+  }
+
+  &__content-w {
+    padding: 30px;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+
+    @media (min-width: $sm) {
+      padding: 60px;
+    }
+
+    @media (min-width: $md) {
+      padding: 85px;
+    }
+  }
+
+  &__quote {
+    color: $b0;
+    font-family: $roboto;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 30.32px;
+    letter-spacing: 0.59px;
+    margin-bottom: 40px;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      font-family: $zest;
+      color: #b3e0ff;
+      content: "\62";
+      top: -30px;
+      left: -40px;
+      font-size: 30px;
+    }
+
+    &::after {
+      position: absolute;
+      font-family: $zest;
+      color: #b3e0ff;
+      content: "\61";
+      bottom: -30px;
+      right: -20px;
+      font-size: 30px;
+    }
+
+
+    @media (min-width: $sm) {
+      margin-bottom: 60px;
+    }
+
+    @media (min-width: $md) {
+      margin-bottom: 80px;
+    }
+
+    @media (min-width: $lg) {
+      margin-bottom: 120px;
+    }
+  }
+
+  &__name {
+    color: $b0;
+    font-family: $roboto;
+    font-size: 27px;
+    font-weight: 700;
+    letter-spacing: 0.79px;
+  }
+
+  &__designation {
+    color: $b0;
+    font-family: $roboto;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0.47px;
+  }
+}
+
+.testimonial-slider {
+  .slick-next,
+  .slick-prev {
+    &.slick-disabled {
+      opacity: 0;
+    }
+  }
+
+  .slick-next {
+    right: -35px;
+  }
+
+  .slick-prev {
+    left: -80px;
+  }
+
+  .slick-next::before,
+  .slick-prev::before {
+    background-color: #009aff;
+    padding: 20px;
+    font-family: $zest;
+  }
+
+  .slick-next::before {
+    content: "\63";
+  }
+
+  .slick-prev::before {
+    content: "\64";
+  }
+}

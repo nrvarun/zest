@@ -1,0 +1,151 @@
+
+.fitness-section {
+  padding: 20px;
+
+  @media (min-width: $sm) {
+    padding: 50px;
+  }
+
+  @media (min-width: $md) {
+    padding: 120px 50px;
+  }
+}
+
+.fitness-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 0;
+
+  li {
+    flex: 0 1 25%;
+    margin-right: 25px;
+    text-align: center;
+
+    @media (min-width: $sm) {
+      flex: 0 1 50%;
+      margin-right: 50px;
+    }
+
+    @media (min-width: $lg) {
+      flex: 0 1 auto;
+    }
+  }
+}
+
+.fitness-icon {
+  width: 44px;
+  height: 40px;
+  margin-bottom: 15px;
+}
+
+.fitness-icontext {
+  color: #000000;
+  font-family: $roboto;
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0;
+
+  @media (min-width: $sm) {
+    font-size: 14px;
+  }
+}
+
+.offerlist {
+  display: flex;
+  justify-content: center;
+
+  &__offer {
+    flex: 0 1 auto;
+    padding: 40px 20px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(244, 244, 244, 0.2);
+
+    &:last-child {
+      margin: 0;
+      padding: 40px 0;
+      border: none;
+    }
+
+    @media (min-width: $sm) {
+      border-bottom: none;
+      border-right: 1px solid rgba(244, 244, 244, 0.2);
+      padding: 30px 80px 30px 0;
+      margin-right: 80px;
+
+      &:last-child {
+        padding: 30px 0;
+      }
+    }
+
+    @media (min-width: $md) {
+      border-bottom: none;
+      border-right: 1px solid  rgba(244, 244, 244, 0.2);
+      padding: 30px 80px 30px 0;
+      margin-right: 80px;
+
+      &:last-child {
+        padding: 30px 0;
+      }
+    }
+  }
+}
+
+.offer-detail {
+  &__title {
+    color: #ffffff;
+    font-family: $roboto;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0;
+
+    @media (min-width: $sm) {
+      font-size: 16px;
+    }
+
+    @media (min-width: $md) {
+      font-size: 18px;
+    }
+  }
+
+  &__count {
+    color: #ffffff;
+    font-family: $roboto;
+    font-size: 20px;
+    font-weight: 700;
+
+    @media (min-width: $sm) {
+      font-size: 30px;
+    }
+
+    @media (min-width: $md) {
+      font-size: 40px;
+    }
+  }
+}
+
+.offer-content-w {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.offer-section {
+  padding: 30px;
+  background: url('../img/offer-bgimg.png') no-repeat;
+  background-size: cover;
+
+  @media (min-width: $sm) {
+    padding: 60px;
+  }
+
+  @media (min-width: $md) {
+    padding: 80px;
+  }
+
+  @media (min-width: $lg) {
+    padding: 100px;
+  }
+}

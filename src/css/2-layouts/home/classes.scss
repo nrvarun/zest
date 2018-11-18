@@ -1,0 +1,118 @@
+
+.class-section {
+  margin-bottom: 50px;
+
+  @media (min-width: $sm) {
+    margin-bottom: 100px;
+  }
+}
+
+.classes-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (min-width: $sm) {
+    margin-top: -60px;
+  }
+
+  li {
+    display: flex;
+
+    @media (min-width: $sm) {
+      flex: 0 1 50%;
+    }
+
+    @media (min-width: $md) {
+      flex: 0 1 25%;
+    }
+  }
+}
+
+.class {
+  padding: 25px 30px;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    color: inherit;
+    font-family: $roboto;
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  &__price {
+    color: inherit;
+    font-size: 40px;
+    font-weight: 400;
+    font-family: $roboto;
+
+    span {
+      font-weight: 700;
+    }
+  }
+
+  &__duration {
+    color: inherit;
+    font-family: $roboto;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  &__desc {
+    color: inherit;
+    font-family: $roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.4px;
+    flex: 1 0 auto;
+  }
+
+  &--fitness {
+    color: $w;
+    background-image: linear-gradient(-51deg, #009aff 0%, #2182c2 100%);
+  }
+
+  &--group {
+    color: $w;
+    background-image: linear-gradient(-51deg, #ff0058 0%, #ee3e7b 100%);
+  }
+
+  &--bootcamp {
+    color: $w;
+    background-image: linear-gradient(-51deg, #ffc600 0%, #ffc600 1%, #fdcf09 100%);
+  }
+
+  &--discount {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('../img/discount-bgimg.png') no-repeat;
+    background-size: cover;
+    background-size: 80%;
+    background-position: right 1px center;
+  }
+}
+
+.discount {
+  &__text {
+    background: linear-gradient(-26deg, #138cdc 0%, #f32b71 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #000000;
+    font-family: $roboto;
+    font-size: 14px;
+    font-weight: 300;
+    margin: 0;
+    text-transform: uppercase;
+
+    &.main {
+      font-size: 22px;
+      font-weight: 700;
+      line-height: 28.49px;
+    }
+  }
+}

@@ -1,0 +1,10 @@
+.input-field {
+  border-radius: 3px;
+  border: 1px solid #e6e6e6;
+  background-color: #ffffff;
+  padding: 15px;
+
+  &--small {
+    width: 80px;
+  }
+}

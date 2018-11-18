@@ -1,0 +1,27 @@
+.link {
+  &,
+  &:focus,
+  &:hover,
+  &:active {
+    color: $b0;
+    font-size: 12px;
+    font-weight: 300;
+    position: relative;
+    font-family: $roboto;
+    display: inline-block;
+    text-transform: uppercase;
+
+    @media (min-width: $sm) {
+      font-size: 14px;
+    }
+  }
+
+  &--small {
+    &,
+    &:hover,
+    &:active,
+    &:focus {
+      font-size: 12px;
+    }
+  }
+}

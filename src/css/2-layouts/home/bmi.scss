@@ -1,0 +1,46 @@
+.bmi-section {
+  padding: 30px;
+  background: url('../img/bmi-bgimg.png') no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @media (min-width: $sm) {
+    padding: 50px;
+  }
+
+  @media (min-width: $md) {
+    padding: 70px;
+  }
+
+  @media (min-width: $lg) {
+    padding: 90px;
+  }
+}
+
+.bmi-label {
+  color: $w;
+  font-family: $roboto;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.42px;
+}
+
+.bmi-title {
+  color: $w;
+  font-family: $roboto;
+  font-size: 31px;
+  margin-bottom: 0;
+  font-weight: 300;
+
+  span {
+    font-weight: 700;
+  }
+}
+
+.bmi-result {
+  color: $w;
+  font-family: $roboto;
+  font-size: 51px;
+  font-weight: 700;
+  margin: 0;
+}
