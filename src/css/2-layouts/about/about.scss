@@ -1,0 +1,43 @@
+.about-section {
+  // Stylings to come here
+  padding: 30px;
+  background-position: left center;
+
+  @media (min-width: $sm) {
+    padding: 40px;
+  }
+
+  @media (min-width: $md) {
+    padding: 50px;
+  }
+
+  @media (min-width: $lg) {
+    padding: 75px 75px 100px 75px;
+  }
+}
+
+.about-content-w {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-gallery-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+
+  @media (min-width: $sm) {
+    height: 300px;
+  }
+}
+
+.about-content-bgimg {
+  position: absolute;
+  left: 0;
+
+  @media (min-width: $sm) {
+    left: -320px;
+    top: -58px;
+  }
+}

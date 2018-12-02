@@ -32,7 +32,7 @@
   }
 
   &__content-w {
-    padding: 30px;
+    padding: 10px;
     display: flex;
     margin: auto;
     flex-direction: column;
@@ -49,13 +49,18 @@
   &__quote {
     color: $b0;
     font-family: $roboto;
-    font-size: 20px;
+    font-size: 14px;
+    line-height: 24px;
     font-weight: 400;
     font-style: italic;
-    line-height: 30.32px;
     letter-spacing: 0.59px;
-    margin-bottom: 40px;
+    margin: 40px 0;
     position: relative;
+
+    @media (min-width: $sm) {
+      font-size: 20px;
+      line-height: 30.32px;
+    }
 
     &::before {
       position: absolute;
@@ -63,8 +68,12 @@
       color: #b3e0ff;
       content: "\62";
       top: -30px;
-      left: -40px;
-      font-size: 30px;
+      left: -10px;
+      font-size: 15px;
+
+      @media (min-width: $sm) {
+        font-size: 30px;
+      }
     }
 
     &::after {
@@ -72,9 +81,13 @@
       font-family: $zest;
       color: #b3e0ff;
       content: "\61";
-      bottom: -30px;
-      right: -20px;
-      font-size: 30px;
+      bottom: -10px;
+      right: 0;
+      font-size: 15px;
+
+      @media (min-width: $sm) {
+        font-size: 30px;
+      }
     }
 
 
@@ -94,9 +107,13 @@
   &__name {
     color: $b0;
     font-family: $roboto;
-    font-size: 27px;
+    font-size: 16px;
     font-weight: 700;
     letter-spacing: 0.79px;
+
+    @media (min-width: $sm) {
+      font-size: 27px;
+    }
   }
 
   &__designation {
@@ -105,6 +122,10 @@
     font-size: 16px;
     font-weight: 300;
     letter-spacing: 0.47px;
+
+    @media (min-width: $sm) {
+      font-size: 10px;
+    }
   }
 }
 
@@ -127,8 +148,12 @@
   .slick-next::before,
   .slick-prev::before {
     background-color: #009aff;
-    padding: 20px;
+    padding: 10px;
     font-family: $zest;
+
+    @media (min-width: $sm) {
+      padding: 20px;
+    }
   }
 
   .slick-next::before {

@@ -1,0 +1,37 @@
+.ceo-section {
+  // Stylings to come here
+  padding: 30px;
+
+  @media (min-width: $sm) {
+    padding: 40px;
+  }
+
+  @media (min-width: $md) {
+    padding: 50px;
+  }
+
+  @media (min-width: $lg) {
+    padding: 75px 75px 100px 75px;
+  }
+}
+
+.ceo-details-w {
+  max-width: 400px;
+  margin-right: auto;
+}
+
+.ceo-name {
+  color: #000000;
+  font-family: $roboto;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.45px;
+}
+
+.ceo-studio {
+  color: #000000;
+  font-family: $roboto;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.35px;
+}

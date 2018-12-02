@@ -1,9 +1,10 @@
 .banneractions-list {
-  display: flex;
+  @media (min-width: $sm) {
+    display: flex;
+  }
 
   li {
     margin-bottom: 15px;
-    margin-right: 10px;
 
     @media (min-width: $sm) {
       margin-right: 15px;
